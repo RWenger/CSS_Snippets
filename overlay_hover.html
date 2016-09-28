@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<style>
+		.card
+		{
+			width:100px;
+			height:150px;
+			margin:5px;
+			float:left;
+			overflow:hidden;
+			position:relative;
+		}
+		
+		.cardImg
+		{
+			width:inherit;
+			height:inherit;
+			display:table;
+		}
+		
+		.cardImgContainer
+		{
+			float:left;
+			width:inherit;
+			height:inherit;
+		}
+		
+		.overlay
+		{
+			width:80px;
+			height:130px;
+			position:absolute;
+			top:115px;
+			bottom:0px;
+			padding:10px;
+			background: rgba(8, 8, 8, .85);
+			transition:.3s;
+			color:white;
+		}
+		
+		.card:hover .overlay
+		{
+			top:0px;
+			transition:.3s;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="cardImgContainer">
+				<img class="cardImg" src="images/playing_card.png">
+			</div>
+			<div class="overlay">
+				<strong>Title</strong>
+				<br>
+				<br>
+				A short description goes here.
+				<br>
+				<br>
+				More data.
+			</div>
+		</div>
+	</body>
+</html>
